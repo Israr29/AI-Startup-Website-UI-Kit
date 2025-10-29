@@ -1,0 +1,265 @@
+.navbar {
+ 
+  background-color: #000000;
+  border: 1px solid #2f2d2d;
+  padding: 14px 40px;
+  color: #fff;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border: 2px solid #2f2e2e;
+  padding: 8px 25px;
+  border-radius:45px;
+
+}
+
+.nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #8b8787;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.cta-btn {
+  background-color: #5420a1f4;
+  color: #fff;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+}
+
+.cta-btn:hover {
+  background-color: #7a3ce0;
+  transition: all .3s ease;
+
+}
+
+.btn-box{
+  border: 2px solid #555;
+  padding: 7px;
+  border-radius: 16px;
+  margin: 0;
+ 
+}
+
+.btn-box:hover{
+ transform: scale(1.03); 
+ transition: all .3s ease-in;
+
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  border: 1px solid #2f2e2e;
+  position: absolute;
+  top: 1.5rem;
+  left: -12rem;
+  background-color: #0c0c0c;
+  padding: 1rem;
+  border-radius: 16px;
+  color: #fff;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  transition: all 0.4s ease;
+  width: 660px;
+}
+
+.dropdown-content-2{
+  display: none;
+  border: 1px solid #2f2e2e;
+  position: absolute;
+  top: 1.5rem;
+  left: -3rem;
+  background-color: #0c0c0c;
+  padding: .9rem;
+  border-radius: 16px;
+  color: #fff;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  transition: all 0.4s ease;
+}
+
+
+ .dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-content-2{
+    display: grid;
+
+}
+
+
+
+ .dropdown-content,
+ .dropdown-content-2{
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-content-2 {
+ 
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  
+}
+
+.dropdown-content {
+  grid-template-columns: 1.2fr 1fr;
+  min-width: 660px;
+  gap: 1rem;
+  
+}
+
+
+
+.dropdown-content-2 {
+  grid-template-columns: 1fr;
+  min-width: 210px;
+  gap: .7rem;
+  
+  
+}
+
+.feature {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 8px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.feature i {
+  font-size: .9rem;
+  background-color: #201f1f;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 2px solid #3c3c3c;
+}
+
+.feature h4 {
+  font-size: .9rem;
+  margin: 0 0 8px 0;
+}
+
+.feature p {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin: 0;
+}
+
+.feature:hover {
+  background-color: #212121;
+}
+
+.dropdown-right {
+  position: relative;
+}
+
+.img-container {
+  width: 320px;
+  height: 230px;
+  border: 2px solid #696767;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover .dropdown-img {
+  transform: scale(1.05);
+}
+
+.img-content {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.img-content h4 {
+  font-size: .8rem;
+  margin: 0 0 8px 0;
+}
+
+.img-content p {
+  font-weight: bold;
+  color: #ccc;
+  margin: 0;
+   font-size: .7rem;
+}
+
+.tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #9855ff;
+  padding: 3px 12px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  border-radius: 10px;
+}
+
+.dropdown-right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .8rem;
+  margin: 1rem 0 0 1rem;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.dropdown-right a:hover {
+  color: #ccc;
+}
+
+.dropdown-right a:hover i {
+  margin-left: 5px;
+  transition: 0.4s ease;
+}
+
+/* responsive ness */

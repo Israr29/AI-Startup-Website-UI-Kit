@@ -11,24 +11,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./Navbar.css">
+    <link rel="stylesheet" href="/components/styles/global.css" />
+        <link rel="stylesheet" href="/components/styles/Navbar.css" />
+    <link rel="stylesheet" href="/components/styles/Hero-section.css" />
+    
+
     <title>AI-Startup-Website-UI-Kit</title>
   </head>
   <body>
+    <!-- Navbar-Structure -->
     <header class="navbar">
       <nav>
-        <div>
+        <div class="logo-container">
           <img src="/src/Logo.png" alt="Logo" class="logo" />
         </div>
 
         <div class="nav-links">
           <ul>
             <li class="dropdown">
-              <button class="dropbtn">Features <i class="fa-solid fa-caret-down"></i> </button>
+              <a href="#">Features <i class="fa-solid fa-caret-down"></i></a>
               <div class="dropdown-content">
                 <div class="drop-left">
-                  <a href="" class="feature">
+                  <a href="#" class="feature">
                     <i class="fa-solid fa-gauge"></i>
                     <div>
                       <h4>Dashboard</h4>
@@ -36,7 +40,7 @@
                     </div>
                   </a>
 
-                  <a href="" class="feature">
+                  <a href="#" class="feature">
                     <i class="fa-solid fa-list-check"></i>
                     <div>
                       <h4>Content evaluation</h4>
@@ -44,7 +48,7 @@
                     </div>
                   </a>
 
-                  <a href="" class="feature">
+                  <a href="#" class="feature">
                     <i class="fa-solid fa-crosshairs"></i>
                     <div>
                       <h4>SEO goals</h4>
@@ -52,7 +56,7 @@
                     </div>
                   </a>
 
-                  <a href="" class="feature">
+                  <a href="#" class="feature">
                     <i class="fa-solid fa-star"></i>
                     <div>
                       <h4>Smart Keyword Generator</h4>
@@ -60,7 +64,7 @@
                     </div>
                   </a>
 
-                  <a href="" class="feature">
+                  <a href="#" class="feature">
                     <i class="fa-solid fa-bell"></i>
                     <div>
                       <h4>Automatic alerts</h4>
@@ -68,62 +72,99 @@
                     </div>
                   </a>
                 </div>
+
                 <div class="dropdown-right">
                   <div class="img-container">
-                    <img src="/src/nav-link-img.avif" class="dropdown-img" alt="Reports Img" />
+                    <img
+                      src="/src/nav-link-img.avif"
+                      class="dropdown-img"
+                      alt="Reports Img"
+                    />
                     <div class="tag">NEW</div>
                     <div class="img-content">
                       <h4>Visual reports</h4>
                       <p>Insights into your site performance</p>
                     </div>
                   </div>
-                  <a href="#">See the latest features <i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="#"
+                    >See the latest features
+                    <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </div>
               </div>
             </li>
           </ul>
+
           <a href="#developers">Developers</a>
-          <div>
-            <ul>
-                <li class="dropdown-2">
-                    <button class="dropbtn">Company</button>
-                    <div class="dropdown-content-2">
-                        <a href="">
-                            <i class="fa-solid fa-users"></i>
-                            <div>
-                                <h4>About</h4>
-                                <p>Our vision</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <i class="fa-solid fa-suitcase"></i>
-                            <div>
-                                <h4>Careers</h4>
-                                <p>Jion our team</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <i class="fa-solid fa-shapes"></i>
-                            <div>
-                                <h4>Press Kit</h4>
-                                <p>Brand assets & media</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div>
-                                <h4>Contact</h4>
-                                <p>Get in touch</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-          </div>
+
+          <ul>
+            <li class="dropdown">
+              <a href="#">Company <i class="fa-solid fa-caret-down"></i></a>
+              <div class="dropdown-content-2">
+                <a href="#" class="feature">
+                  <i class="fa-solid fa-users"></i>
+                  <div>
+                    <h4>About</h4>
+                    <p>Our vision</p>
+                  </div>
+                </a>
+
+                <a href="#" class="feature">
+                  <i class="fa-solid fa-suitcase"></i>
+                  <div>
+                    <h4>Careers</h4>
+                    <p>Join our team</p>
+                  </div>
+                </a>
+
+                <a href="#" class="feature">
+                  <i class="fa-solid fa-shapes"></i>
+                  <div>
+                    <h4>Press Kit</h4>
+                    <p>Brand assets & media</p>
+                  </div>
+                </a>
+
+                <a href="#" class="feature">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    <h4>Contact</h4>
+                    <p>Get in touch</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+
           <a href="#blog">Blog</a>
-          <a href="changelog">Changelog</a>
+          <a href="#changelog">Changelog</a>
+        </div>
+        <div class="btn-box">
+          <button class="cta-btn">Join Wishlist</button>
         </div>
       </nav>
     </header>
+    <!-- hero-section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="badge">
+          <a href="#"><span class="tag-2">NEW</span> Latest integration just arrived</a>
+        </div>
+        <div class="heading">
+          <h1>Boost your <br><span class="highlight">rankings with AI.</span></h1>
+          <p >Elevate your site’s visibility effortlessly with AI, where <br>smart technology meets user-friendly SEO tools.</p>
+         <button class="cta-btn-2">Start for free</button>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="/src/dashboard.png" alt="Dashboard">
+      </div>
+    </section>
+    <section class="companies">
+      <h3>Trusted by the world’s most innovative teams</h3>
+      <div class="comp-logos">
+        
+      </div>
+    </section>
   </body>
 </html>
