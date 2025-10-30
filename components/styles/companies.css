@@ -1,0 +1,8 @@
+.companies{
+    width: 100%;
+    height: 50vh;
+    border: 4px solid yellow;
+     text-align: center;
+    padding: 20px 40px;
+    align-content: center;
+}
