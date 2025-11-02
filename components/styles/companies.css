@@ -1,12 +1,13 @@
 .companies{
     width: 100%;
-    min-height: 60vh;
+  
      text-align: center;
     align-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    z-index: 1000;
 }
 
 
@@ -65,7 +66,6 @@
 
 .logo-box:hover::before{
     opacity: 1;
-    
     
 }
 

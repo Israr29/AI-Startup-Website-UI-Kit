@@ -1,0 +1,118 @@
+.bento{
+    border: 2px solid white;
+    width: 100%;
+    padding:  30px 50px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.bento-para{
+   
+    width: 420px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ccc;
+}
+
+
+
+
+.row-1,.row-2{
+    display: flex ;
+    border: 2px solid red;
+    margin: 1rem;
+    width: 100%;
+}
+ .row-1 h4 {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: .9rem;
+    margin-top: 2rem;
+
+}
+
+
+.row-1 p{
+    width: 280px;
+    font-weight: 200;
+    color: #ccc;
+    font-size: 14px;
+
+}
+
+.seo-goal{
+  
+  
+     border: 1px solid #312f2f;
+   
+    padding: 20px 30px;
+    margin: 20px;
+    border-radius: 16px;
+    
+   
+
+}
+
+.seo-goal h4{
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+
+}
+
+
+.seo-goal img{
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.seo-goal p{
+    width: 280px;
+    font-weight: 200;
+    color: #ccc;
+}
+
+.user-dash{
+    flex-grow: 3 ;
+    border: 2px solid yellow;
+    margin: 20px;
+    border-radius: 16px;
+ border: 1px solid #312f2f;
+ position: relative;
+}
+
+
+.user-dash .img-container{
+   object-fit: cover;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   width: 100%;
+   height: auto;
+   border: none;
+
+
+}
+
+.user-dash img{
+    width: 75%;
+    margin-top: 4rem;
+}
+
+.user-dash .img-content{
+    position: absolute;
+    left: 30px;
+    bottom: -3px;
+
+}
