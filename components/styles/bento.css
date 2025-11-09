@@ -1,118 +1,172 @@
-.bento{
-    border: 2px solid white;
-    width: 100%;
-    padding:  30px 50px ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+.bento {
+  width: 100%;
+  padding: 60px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.bento-para{
-   
-    width: 420px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ccc;
+.bento-para {
+  width: 420px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ccc;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 
-
-
-
-.row-1,.row-2{
-    display: flex ;
-    border: 2px solid red;
-    margin: 1rem;
-    width: 100%;
-}
- .row-1 h4 {
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    font-size: .9rem;
-    margin-top: 2rem;
-
-}
-
-
-.row-1 p{
-    width: 280px;
-    font-weight: 200;
-    color: #ccc;
-    font-size: 14px;
-
-}
-
-.seo-goal{
+.row-1,
+.row-2 {
+  display: flex;
+  height: 60vh;
+  width: 100%;
   
+}
+.row-1 h4 {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-left: 0.3rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.row-1 p {
+  width: 280px;
+  font-weight: 200;
+  color: #ccc;
+  margin-left: 0.3rem;
+  font-size: 14px;
+}
+
+.seo-goal {
+  border: 1px solid #312f2f;
+  padding: 10px 15px;
+  margin: 20px;
+  border-radius: 16px;
+}
+
+.seo-goal h4 {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.seo-goal img {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seo-goal p {
+  width: 280px;
+  font-weight: 200;
+  color: #ccc;
+}
+
+.user-dash {
+  border: 1px solid #312f2f;
+  flex-grow: 3;
+  margin: 20px;
+  border-radius: 16px;
+
+  position: relative;
+  z-index: 00;
+}
+
+.box-shadow {
+  position: absolute;
+  border: none;
+  inset: 0;
+  background: linear-gradient(to top,  rgb(83, 2, 145, 0.4) 30%, #0000 70%);
+  z-index: 0;
+  border-radius: 16px;
+}
+
+.user-dash .img-container {
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  border: none;
   
-     border: 1px solid #312f2f;
-   
-    padding: 20px 30px;
-    margin: 20px;
+
+}
+
+.user-dash img {
+  width: 75%;
+  z-index: -1;
+  margin-top: 4rem;
+ 
+}
+
+.user-dash .img-content {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+
+}
+
+.report {
+    border: 1px solid #312f2f;
     border-radius: 16px;
-    
-   
-
+  flex-grow: 3;
+  margin: 20px;
+  position: relative;
 }
 
-.seo-goal h4{
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    margin-top: 2rem;
-
+.img-cont-report {
+ 
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border: none;
 }
 
-
-.seo-goal img{
-    width: 330px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.img-cont-report img {
+  width: 100%;
+  margin: 4rem 3rem 0 4rem;
 }
 
-
-.seo-goal p{
-    width: 280px;
-    font-weight: 200;
-    color: #ccc;
+.report .img-cont-report .img-cont {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
 }
 
-.user-dash{
-    flex-grow: 3 ;
-    border: 2px solid yellow;
-    margin: 20px;
-    border-radius: 16px;
- border: 1px solid #312f2f;
- position: relative;
+.img-cont-report .img-cont h4,
+.smart-key h4 {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  margin-top: 2rem;
 }
 
-
-.user-dash .img-container{
-   object-fit: cover;
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   width: 100%;
-   height: auto;
-   border: none;
-
-
+.img-cont-report .img-cont p,
+.smart-key p {
+  width: 280px;
+  font-weight: 200;
+  color: #ccc;
+  font-size: 14px;
 }
 
-.user-dash img{
-    width: 75%;
-    margin-top: 4rem;
-}
-
-.user-dash .img-content{
-    position: absolute;
-    left: 30px;
-    bottom: -3px;
-
+.smart-key {
+  border: 1px solid #312f2f;
+  padding: 20px 30px;
+  margin: 20px;
+  border-radius: 16px;
 }
