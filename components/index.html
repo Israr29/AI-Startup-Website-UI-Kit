@@ -15,9 +15,11 @@
 
     <link rel="stylesheet" href="/components/styles/main.css" />
     <link rel="stylesheet" href="/components/styles/Navbar.css" />
+    <link rel="stylesheet" href="/components/styles/Hero-Section.css" />
   </head>
 
   <body>
+    <!-- Navbar-structure -->
     <header class="navbar">
       <div class="nav-container">
         <nav>
@@ -31,7 +33,7 @@
                 <a href="#" id="drop-btn"
                   >Features <i class="fa-solid fa-caret-down" id="drop-icon"></i
                 ></a>
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="drop-content">
                   <div class="dropdown-left">
                     <a href="#" class="feature">
                       <i class="fa-solid fa-gauge"></i>
@@ -70,6 +72,13 @@
                     </a>
                   </div>
 
+                  <!--  -->
+                  
+
+                    
+
+
+
                   <div class="dropdown-right">
                     <div class="drop-img-container">
                       <div class="img">
@@ -100,7 +109,7 @@
                 <a href="#" class="company"
                   >Company <i class="fa-solid fa-caret-down" id="drop-icon"></i
                 ></a>
-                <div class="dropdown-content-2">
+                <div class="dropdown-content-2" id="dropdown2">
                   <a href="#" class="feature">
                     <i class="fa-solid fa-users"></i>
                     <div>
@@ -130,11 +139,36 @@
                     </div>
                   </a>
                 </div>
-              </li>
+
+                
+                
             </ul>
 
             <li><a href="#">Blog</a></li>
             <li><a href="#">Changelog</a></li>
+
+            <!-- Mobile Dropdown Menu -->
+            <div class="dropdown-left-mobile">
+                <h4>Features</h4>
+                <a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                <a href="#"><i class="fa-solid fa-list-check"></i> Content evaluation</a>
+                <a href="#"><i class="fa-solid fa-crosshairs"></i> SEO goals</a>
+                <a href="#"><i class="fa-solid fa-star"></i> Smart Keyword Generator</a>
+                <a href="#"><i class="fa-solid fa-bell"></i> Automated alerts</a>
+
+                <h4>Developers</h4>
+
+                <h4>Company</h4>
+                <a href="#"><i class="fa-solid fa-users"></i> About</a>
+                <a href="#"><i class="fa-solid fa-suitcase"></i> Careers</a>
+                <a href="#"><i class="fa-solid fa-shapes"></i> Press Kit</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>Contact</a>
+
+                <h4>Blog</h4>
+                <h4>Changelog</h4>
+                </div>
+
+              </li>
           </div>
 
           <div class="nav-btn" id="desktop-view">
@@ -152,6 +186,26 @@
         </nav>
       </div>
     </header>
+
+    <!-- Hero-section -->
+     <section class="hero-section">
+      <div class="hero-content">
+        <div class="badge">
+          <a href="#"
+            ><span class="tag-2">NEW</span> Latest integration just arrived</a
+          >
+        </div>
+        <div class="main-heading">
+          <h1>Elevate your SEO efforts</h1>
+          <p>Elevate your site’s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.</p>
+
+        </div>
+        <div class="form">
+          <input type="email" class="mail-box">
+          <button class="mail-btn">Sign Up</button>
+        </div>
+      </div>
+     </section>
     <script src="/components/script.js"></script>
   </body>
 </html>

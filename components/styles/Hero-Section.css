@@ -1,0 +1,17 @@
+.hero-section{
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    width: 100%;
+}
+
+.hero-content{
+    border: 2px solid red;
+    width: 75%;
+    height: 65vh;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+}
