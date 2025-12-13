@@ -1,17 +1,228 @@
-.hero-section{
-    border: 2px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120vh;
-    width: 100%;
+.hero-section {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  
+  width: 100%;
+  position: relative;
+  background:
+ 
+  repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    linear-gradient(to bottom right, #0000 40%, rgba(98, 98, 203, 1));
+    
 }
 
-.hero-content{
-    border: 2px solid red;
-    width: 75%;
-    height: 65vh;
-    display: flex;
-    align-items: self-start;
-    flex-direction: column;
+.hero-content {
+  padding: 10px 0px;
+  width: 90%;
+  display: flex;
+  margin-top: 9rem;
+  height: 577px;
+  align-items: self-start;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  background-color: transparent;
+height:100vh;
+  z-index: 1;
+  margin-left: 8rem;
+}
+
+.badge {
+  border: 1px solid #2f2d2d;
+  display: inline;
+  font-size: 0.9rem;
+  padding: 12px 14px;
+  border-radius: 26px;
+  
+}
+
+.badge a {
+  color: #9855ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.tag-2 {
+  border: 1px solid #2f2d2d;
+  padding: 3px 5px;
+  border-radius: 18px;
+  font-size: 0.7rem;
+  margin-right: 4px;
+  background-color: #9855ff;
+  font-weight: bold;
+
+  color: #000;
+}
+
+.main-heading {
+  background-color: transparent;
+}
+.upper-content{
+  background-color: transparent;
+}
+
+.main-heading h1 {
+  font-size: 5rem;
+  width: 490px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: transparent;
+}
+
+.main-heading p {
+  background-color: transparent;
+  width: 544px;
+  font-size: 1.1rem;
+  color: #ccc;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.dark {
+  background: linear-gradient(to bottom, rgb(9, 9, 9, 0.1), #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.upper-content .form {
+  border: 2px solid #312f2f;
+  border-radius: 8px;
+  max-width: 410px;
+  padding: 2px;
+  margin-top: 3rem;
+  background-color: transparent;
+}
+
+.upper-content .form .mail-box {
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: whitesmoke;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 280px;
+}
+
+.form .mail-box::placeholder {
+  color: #848484;
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.form .mail-btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  font-size: 1.1rem;
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+.form .mail-btn:hover {
+  background-color: #dfd9d9;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.9);
+}
+
+.hero-cover-img {
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+  width: auto;
+  mix-blend-mode: screen;
+  height: auto;
+  
+}
+
+.hero-cover-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(1.9);
+}
+
+
+/* Logos-section */
+
+
+.lower-cont{
+  display:flex;
+  align-items:center;
+  width:100%;
+  gap:2rem;
+  overflow:hidden;
+  background: transparent;
+  
+}
+.heading{
+  background: transparent;
+}
+
+.heading h4{
+  font-weight:300;
+  font-size:1rem;
+  white-space:nowrap;
+  background: transparent;
+}
+
+.comp-carousel{
+  width:100%;
+  overflow:hidden;
+  background: transparent;
+}
+
+.track{
+  display:flex;
+  width:max-content;
+  animation:scroll 18s linear infinite;
+  will-change:transform;
+  background: transparent;
+}
+
+.group{
+  display:flex;
+  align-items:center;
+  gap:2rem;
+  background: transparent;
+}
+
+.img-card{
+  width:8rem;
+  height:6rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: transparent;
+}
+
+.img-card img{
+  width: 100%;
+  height: 28px;
+  object-fit:cover;
+  background: transparent;
+}
+
+@keyframes scroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
 }
