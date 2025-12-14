@@ -339,34 +339,15 @@ ul .dropdown-2 {
 @media (max-width: 740px) {
   .hamburger-btn {
     display: block;
+   
   }
 
+  .navbar{
+    position: relative;
+  }
   .nav-container {
     width: 100%;
     margin: 0;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    background: transparent;
-    text-align: left;
-    align-items: flex-start;
-    height: 0;
-    overflow: hidden;
-    padding: 0;
-    transition: .8s;
-  }
-
-  .nav-links.active {
-    height: auto;
-    padding: 2rem;
-    transform: translateY(20px); 
-   
-    border-bottom: 1px solid #2f2e2e;
   }
 
   #desktop-view {
@@ -388,17 +369,23 @@ ul .dropdown-2 {
     display: none ;
   }
 
-  .dropdown-left-mobile {
-    display: flex;
-  }
+ .dropdown-left-mobile {
+  display: flex;
+  position: absolute;
+  top: 14rem;
+  left: 0;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  transform: translateY(0);
+  transition: max-height .8s ease , padding .4s ease;
+}
 
- 
+.dropdown-left-mobile.active {
+  max-height: 600px;   
+  padding: 2rem;
+}
 
-  .nav-links .dropdown-content{
-    display: none;
-    height: 0;
-    width:0;
-  }
 
   .nav-links li a{
     display: none;
