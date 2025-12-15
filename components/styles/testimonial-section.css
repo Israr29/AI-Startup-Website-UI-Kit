@@ -1,0 +1,177 @@
+.testimonial{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+.testimonial-content{
+    border: 1px solid rgba(62, 61, 61, 0.604);
+    width: 80%;
+    height: 473px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:18px ;   
+    gap: 1.5rem;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1;
+    background: transparent;
+    padding: 0px 20px;
+
+}
+
+.img-container{
+    z-index: 1;
+    background: transparent;    
+}
+
+.img-container img{
+    background: transparent;
+    border: none;
+    width: 210px;
+    height:210px;
+}
+
+
+.box-shadow {
+    position: absolute;
+    top: -21rem;
+    width: 80%;
+    height: 45vh;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    box-shadow:0px 0px 1000px 180px rgba(140, 69, 255, 0.49);
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+.review{
+    background: transparent;
+ z-index: 1;
+    width: 339px;
+    height: 170px;
+    padding: 10px;
+}
+
+.review .comment{
+    background: transparent;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+     z-index: 1;
+}
+
+.review h4{
+    background: transparent;
+    margin-bottom: .7rem;
+    font-size: .9rem;
+    font-weight: 300;
+     z-index: 1;
+}
+
+.review .prof{
+    background: transparent;
+    font-size: .9rem;
+    font-weight: 100;
+     z-index: 1;
+}
+
+
+/* responsiveness at 810px */
+
+
+@media (max-width:1600px){
+    .box-shadow{
+        top: -30rem;
+        box-shadow:0px 0px 1000px 300px rgba(140, 69, 255, 0.49);
+    }
+}
+@media (max-width:1025px){
+    .box-shadow{
+        top: -40rem;
+        box-shadow:0px 0px 1000px 480px rgba(140, 69, 255, 0.49);
+    }
+}
+
+@media (max-width:821px){
+
+    .img-container img{
+    background: transparent;
+    border: none;
+    width: 170px;
+    height:170px;
+}
+
+.testimonial-content{
+    gap: 1rem;
+    align-content: center;
+    padding: 10px;
+}
+
+
+.review{
+    width: 270px;
+    height: 170px;
+
+}
+
+    .box-shadow{
+        top: -40rem;
+        box-shadow:0px 0px 1000px 450px rgba(140, 69, 255, 0.49);
+    }
+
+}
+
+
+
+@media (max-width: 700px){
+  .testimonial-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 450px){
+    .img-container img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .review{
+       
+        width: 240px;
+        height: auto;
+    }
+
+    .comment{
+        font-size: .9rem;
+    }
+
+    .review .prof{
+        font-size: .8rem;
+    }
+
+    .box-shadow{
+        top: -28rem;
+        
+
+        box-shadow:0px 0px 1000px 250px rgba(140, 69, 255, 0.49);
+
+    }
+
+}
