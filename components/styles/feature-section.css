@@ -1,0 +1,140 @@
+.feature-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.f-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  flex-direction: column;
+}
+
+.f-heading p {
+  font-size: 2.3rem;
+  text-align: center;
+  width: 640px;
+  background: transparent;
+}
+.mini-heading {
+  color: #9855ff;
+  text-align: center;
+  margin-bottom: 2rem;
+  border: 1px solid rgb(54, 53, 53);
+  width: 180px;
+  padding: 7px;
+  border-radius: 18px;
+  font-size: 1rem;
+  margin-top: 4rem;
+}
+
+.f-img-container {
+  width: 100%;
+}
+
+.f-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.f-context {
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+.chart-line-1,
+.chart-line-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+  background: transparent;
+  gap: 2rem;
+}
+
+.features-1,
+.features-2 {
+  background: transparent;
+}
+
+.features-1 h4,
+.features-2 h4 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  background: transparent;
+}
+
+.features-1 p,
+.features-2 p {
+  font-size: 0.9rem;
+  background: transparent;
+  font-weight: 100;
+  width: 300px;
+  line-height: 1.4;
+}
+
+.features-1 i,
+.features-2 i {
+  color: #ccc;
+  background: transparent;
+  margin-right: 5px;
+}
+
+/* responsiveness at 999px */
+
+@media (max-width: 999px) {
+  .f-context {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .chart-line-1,
+  .chart-line-2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* responsiveness at 835px */
+
+@media (max-width: 835px) {
+  .f-heading p {
+    font-size: 1.9rem;
+    width: 580px;
+  }
+}
+
+/* responsiveness at 835px */
+
+@media (max-width: 700px){
+  .f-context {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+}
+
+
+@media (max-width: 700px){
+  .f-heading p {
+    font-size: 1.5rem;
+    width: 420px;
+
+  }
+}
+
+
+@media (max-width: 430px){
+  .f-heading p {
+    font-size: 1.2rem;
+    width: 320px;
+
+  }
+}
+

@@ -5,6 +5,8 @@
   width: 100%;
   height: auto;
   position: relative;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
   background: repeating-linear-gradient(
       to right,
       rgba(255, 255, 255, 0.05) 0px,
