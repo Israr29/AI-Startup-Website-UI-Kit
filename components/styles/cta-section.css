@@ -1,0 +1,132 @@
+.cta {
+  width: 100%;
+  height: 582px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-content {
+  border: 1px solid rgba(62, 61, 61, 1);
+  border-radius: 12px;
+  width: 80%;
+  height: 558px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.title {
+  text-align: center;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 1;
+  background: transparent;
+}
+.cta-content img {
+  width: 92px;
+  height: 96px;
+  margin-bottom: 3rem;
+  z-index: 1;
+  background: transparent;
+}
+
+.cta-content h2 {
+  font-size: 3rem;
+  width: 478px;
+  height: 132px;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: transparent;
+}
+
+.title p {
+  text-align: center;
+  width: 320px;
+  height: 62px;
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  background: transparent;
+}
+
+.cta-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(140, 69, 255, 0.4);
+  box-shadow: inset 0px 0px 5px 1px #fff;
+}
+
+.cta-btn:hover {
+  background-color: #310f66a3;
+  transition: all 0.4s ease;
+}
+
+.over {
+  position: absolute;
+  top: -22rem;
+  width: 664.39px;
+  height: 249.54px;
+  overflow-y: hidden;
+  height: 45vh;
+  border-radius: 100%;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0px 0px 1200px 340px rgba(140, 69, 255, 0.3);
+}
+
+/* responsiveness at 810px */
+
+@media (max-width: 1600px) {
+  .over {
+    top: -30rem;
+    box-shadow: 0px 0px 1000px 300px rgba(140, 69, 255, 0.49);
+  }
+}
+@media (max-width: 1025px) {
+  .over {
+    top: -40rem;
+    box-shadow: 0px 0px 1000px 480px rgba(140, 69, 255, 0.49);
+  }
+}
+
+@media (max-width: 821px) {
+  .over {
+    top: -40rem;
+    box-shadow: 0px 0px 1000px 450px rgba(140, 69, 255, 0.49);
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-content h2 {
+    font-size: 2.4rem;
+    width: 328px;
+
+    margin-bottom: 0.7rem;
+  }
+
+  .title p {
+    width: 280px;
+
+    font-size: 1rem;
+
+    margin-bottom: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .over {
+    top: -28rem;
+    box-shadow: 0px 0px 1000px 250px rgba(140, 69, 255, 0.49);
+  }
+}

@@ -169,8 +169,8 @@
     .box-shadow{
         top: -28rem;
         
-
-        box-shadow:0px 0px 1000px 250px rgba(140, 69, 255, 0.49);
+        top: -30rem;
+        box-shadow:0px 0px 1000px 300px rgba(140, 69, 255, 0.49);
 
     }
 
