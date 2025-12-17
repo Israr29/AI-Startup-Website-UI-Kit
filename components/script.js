@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.getElementById("dropdown-mobile");
@@ -10,178 +9,53 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-ScrollReveal().reveal('.nav-container', {
-    distance: '50px',
-    duration: 1000,
-    easing: 'ease-out',
-    origin: 'top',
-    reset: false
-  });
-
-
-ScrollReveal().reveal('.upper-content .main-heading', {
-    distance: '50px',
-    duration: 1000,
-    easing: 'ease-out',
-    origin: 'left',
-    reset: false
-  });
-
-
-  ScrollReveal().reveal('.input input',   {
-    distance:'50px',
-    duration: 1000,
-    easing:'ease-in',
-    origin:'left',
-    reset:false
-  });
-
-  ScrollReveal().reveal('.input button',   {
-    distance:'50px',
-    duration: 1000,
-    easing:'ease-in',
-    origin:'right',
-    reset:false
-  });
-
-  ScrollReveal().reveal('.mini-heading',   {
-    distance:'50px',
-    duration: 1000,
-    easing:'ease-in',
-    origin:'left',
-    reset:false
-  });
-
-  ScrollReveal().reveal('.f-heading p',   {
-    distance:'50px',
-    duration: 1000,
-    easing:'ease-in',
-    origin:'bottom',
-    reset:false
-  });
-
-
-  ScrollReveal().reveal('.f-img-container img', {
+const sr = ScrollReveal({
   distance: '50px',
-  duration: 1000,
-  easing: 'ease-in-out',
-  origin: 'left',
-  rotate: { x: 0, y: 0, z: 15 },
-  scale: 0.85,
-  reset: false
+  duration: 1200,
+  easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+  scale: 0.95,
+  opacity: 0,
+  reset: false,
+  viewFactor: 0.4, 
+  mobile: true
 });
 
 
+sr.reveal('.nav-container', { origin: 'top' });
 
 
-  ScrollReveal().reveal('.f-context .chart-line-1,.f-context .chart-line-2 ',   {
-    distance:'50px',
-    duration: 1000,
-    easing:'ease-in',
-    origin:'left',
-    reset:false
-  });
-  
+sr.reveal('.upper-content .main-heading', { origin: 'left' });
+sr.reveal('.mini-heading', { origin: 'left' });
+sr.reveal('.input input', { origin: 'left' });
+sr.reveal('.input button', { origin: 'right' });
 
 
-
-  ScrollReveal().reveal('.testimonial-content img ',   {
-    distance:'50px',
-    duration: 1000,
-    easing:'ease-in',
-    origin:'left',
-    reset:false
-  });
-  
-  ScrollReveal().reveal('.testimonial-content .comment ',   {
-    distance:'50px',
-    duration: 1200,
-    easing:'ease-in',
-    origin:'right',
-    reset:false
-  });
-
-  ScrollReveal().reveal('.testimonial-content h4 ',   {
-    distance:'50px',
-    duration: 1450,
-    easing:'ease-in',
-    origin:'right',
-    reset:false
-  });
+sr.reveal('.f-heading p', { origin: 'bottom' });
+sr.reveal('.f-img-container img', {
+  origin: 'left',
+  rotate: { z: 15 },
+  scale: 0.9,
+  duration: 1400
+});
+sr.reveal('.f-context .chart-line-1, .f-context .chart-line-2', { origin: 'left' });
 
 
-  ScrollReveal().reveal('.testimonial-content .prof',   {
-    distance:'50px',
-    duration: 1600,
-    easing:'ease-in',
-    origin:'right',
-    reset:false
-  });
-
-  ScrollReveal().reveal('.pricing-content h1',   {
-    distance:'50px',
-    duration: 1100,
-    easing:'ease-in',
-    origin:'bottom',
-    reset:false
-  });
-
-  ScrollReveal().reveal('.pricing-content p',   {
-    distance:'50px',
-    duration: 1300,
-    easing:'ease-in',
-    origin:'top',
-    reset:false
-  });
+sr.reveal('.testimonial-content img', { origin: 'left' });
+sr.reveal('.testimonial-content .comment', { origin: 'right', duration: 1400 });
+sr.reveal('.testimonial-content h4', { origin: 'right', duration: 1450 });
+sr.reveal('.testimonial-content .prof', { origin: 'right', duration: 1600 });
 
 
-  ScrollReveal().reveal('.pricing-table tr',   {
-    distance:'50px',
-    duration: 1100,
-    easing:'ease-in',
-    origin:'left',
-    reset:false
-  });
+sr.reveal('.pricing-content h1', { origin: 'bottom' });
+sr.reveal('.pricing-content p', { origin: 'top' });
+sr.reveal('.pricing-table tr', { origin: 'left', interval: 150 });
+
+sr.reveal('.cta-content img', { origin: 'top' });
 
 
-  ScrollReveal().reveal('.cta-content img',   {
-    distance:'50px',
-    duration: 1250,
-    easing:'ease-in',
-    origin:'top',
-    reset:false
-  });
-
-  ScrollReveal().reveal('.title h2',   {
-    distance:'50px',
-    duration: 900,
-    easing:'ease-in',
-    origin:'top',
-    reset:false
-  });
-
-   ScrollReveal().reveal('.title p',   {
-    distance:'50px',
-    duration: 800,
-    easing:'ease-in',
-    origin:'top',
-    reset:false
-  });
-
-  ScrollReveal().reveal('.title button',   {
-    distance:'50px',
-    duration: 700,
-    easing:'ease-in',
-    origin:'top',
-    reset:false
-  });
+sr.reveal('.title h2', { origin: 'top', duration: 900 });
+sr.reveal('.title p', { origin: 'top', duration: 800 });
+sr.reveal('.title button', { origin: 'top', duration: 700 });
 
 
-  ScrollReveal().reveal('footer',   {
-    distance:'50px',
-    duration: 1200,
-    easing:'ease-in',
-    origin:'bottom',
-    reset:false
-  });
+sr.reveal('footer', { origin: 'bottom' });
