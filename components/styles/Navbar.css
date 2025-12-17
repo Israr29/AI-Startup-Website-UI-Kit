@@ -6,12 +6,11 @@
 
 .nav-container {
   width: 90%;
-  border: 1px solid rgba(53, 50, 50, 0.604);
+  border: 1px solid rgba(53, 50, 50, 1);
   border-radius: 15px;
   z-index: 1;
   margin-top: 9px;
- position: sticky;
-  top: 0;
+ position: fixed;
   z-index: 1000;
 }
 
@@ -362,6 +361,8 @@ ul .dropdown-2 {
 
   #mobile-view button {
     padding: 8px 20px;
+    display: flex;
+    align-items: center;
     font-size: 0.8rem;
   }
 
@@ -394,4 +395,12 @@ ul .dropdown-2 {
     transition: all .3s ease;
   }
   
+}
+
+
+@media (max-width:350px){
+  #mobile-view button{
+    padding: 10px ;
+    font-size: .7rem;
+  }
 }

@@ -3,7 +3,7 @@ footer{
     height: 64px;
     margin-top: 4rem;
     border: 1px solid rgba(62, 61, 61, 1);
-    padding: 0px 10px;
+    padding: 10px 10px;
 }
 .img-title{
     display: flex;
@@ -99,7 +99,9 @@ footer{
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
+
     margin-top: 1.8rem;
+    margin-bottom: 1rem;
 
    }
 }

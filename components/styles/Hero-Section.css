@@ -243,6 +243,19 @@
 }
 
 /* responsiveness on 530px */
+@media (max-width: 540px){
+  .input{
+    width: 95%;
+   
+  }
+  .hero-content p{
+    
+    width: 450px;
+     font-size: .9rem;
+  }
+}
+
+
 
 @media (max-width: 530px) {
   .hero-cover-img img {
@@ -295,4 +308,23 @@
     width: 100%;
     margin-top: 0.7rem;
   }
+}
+
+
+
+@media (max-width: 350px){
+  .hero-section{
+    width: 390px;
+    
+  }
+
+
+  .input {
+    width: 90%;
+  }
+  .hero-content{
+    width: 360px;
+    padding: 0;
+  }
+
 }

@@ -1,0 +1,189 @@
+.pricing{
+    
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin-bottom: 6rem;
+
+}
+
+
+.pricing-content{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+
+}
+
+
+.pricing-content h1{
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+    background: transparent;
+}
+
+.pricing-content p{
+     
+     width: 433px;
+     height: 62px;
+     background: transparent;
+}
+
+.table-container{
+    border: 1px solid rgba(62, 61, 61, 1);
+    width:90%;
+    height: 759px;
+   display: flex;
+   align-items: center;
+    padding: 2rem;
+   justify-content: center;
+    margin-top: 4rem;
+border-radius: 10px;
+background: transparent;
+
+}
+
+.pricing-table{
+    background: transparent;
+}
+
+th, td{
+        border-bottom: 1px solid rgb(74, 72, 72);
+        padding: 15px 25px;
+        color: #fff;
+        text-align: left;
+       font-size: .9rem;
+       font-weight: 100;
+       background: transparent;
+       
+       
+       
+    
+    }
+
+    th{
+        font-weight: bold;
+        font-size: 1.2rem;
+        background: transparent;
+    }
+
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        background: transparent;
+        overflow-x: scroll;
+
+    }
+    
+    td i{
+        color: #fff;
+        font-size: .9rem;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+
+    .btn button{
+        background-color: rgba(61, 61, 61, 40);
+        width: 128px;
+        height: 46px;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: inset 0px 0px 10px  #fff;
+    }
+
+    .btn,.glow-btn{
+        background: transparent;
+    }
+
+    .btn button:hover{
+        background-color: rgb(78, 76, 76);
+        transition: all .4s ease;
+    }
+
+    .glow-btn button{
+        background-color: rgba(140, 69, 255, 40);
+        width: 128px;
+        height: 46px;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: inset 0px 0px 10px  #fff;
+    }
+    .glow-btn button:hover{
+        background-color: rgb(98, 11, 240);
+        transition: all .4s ease;
+        
+    }
+
+   
+
+    th:nth-child(3),td:nth-child(3){
+        background-color: rgba(140, 69, 255, .40);
+    }
+
+
+
+
+@media (max-width:760px){
+.pricing-table{
+
+ width: 100%;
+border: none;
+
+}
+}
+
+@media (max-width:710px){
+    .table-container{
+     width: 100%;
+     border: none;
+    
+    }
+
+    .pricing-content{
+         overflow-x: auto;
+    }
+
+    table{
+        margin-left:-3.5rem;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width:480px){
+    .pricing-content h1{
+        font-size: 2.5rem;
+
+    }
+
+    .pricing-content p{
+        width: 320px;
+    }
+}
+
+
+@media (max-width:335px){
+     .pricing-content p{
+        width: 250px;
+        
+    }
+}

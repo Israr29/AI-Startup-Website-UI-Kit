@@ -23,6 +23,7 @@
     z-index: 1;
     background: transparent;
     padding: 0px 20px;
+    overflow: hidden;
 
 }
 
